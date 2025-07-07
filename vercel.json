@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/captchaImage",
+      "destination": "https://139.159.240.204:8080/captchaImage"
+    },
+    {
+      "source": "/:path((login|garage_fvehicle|fvehicles|common|manage|monitor|system|test)/.*)",
+      "destination": "https://139.159.240.204:8080/:path"
+    }
+  ]
+}
